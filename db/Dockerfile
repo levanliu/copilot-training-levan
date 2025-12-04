@@ -9,5 +9,5 @@ ENV POSTGRES_PASSWORD=taskpassword
 COPY init.sql /docker-entrypoint-initdb.d/
 
 # Expose PostgreSQL port
-# do
+# This allows the container to accept connections on port 5432
 EXPOSE 5432
